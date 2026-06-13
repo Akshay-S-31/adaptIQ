@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: adaptiq-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: adaptiq
+      POSTGRES_USER: adaptiq
+      POSTGRES_PASSWORD: adaptiq_secret
+    volumes:
+      - adaptiq_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U adaptiq -d adaptiq"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: adaptiq-redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  adaptiq_pgdata:
