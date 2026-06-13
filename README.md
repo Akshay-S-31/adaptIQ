@@ -2,7 +2,7 @@
 
 ![AdaptIQ Logo](frontend/public/adaptIQ.png)
 
-AdaptIQ is an intelligent, multi-agent Enterprise Learning Platform built for the **Microsoft Azure Foundry Hackathon**. It leverages a modern 3-tier architecture with an AI orchestration engine to generate dynamic learning paths, personalized study plans, and team-level readiness analytics for enterprise employees.
+AdaptIQ is an intelligent, multi-agent Enterprise Learning Platform. It leverages a modern 3-tier architecture with an AI orchestration engine to generate dynamic learning paths, personalized study plans, and team-level readiness analytics for enterprise employees.
 
 ##  Architecture Overview
 
