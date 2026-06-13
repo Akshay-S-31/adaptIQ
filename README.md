@@ -14,7 +14,7 @@ The system is composed of three interconnected services:
 
 ---
 
-## 🚀 Getting Started
+## SETUP
 
 Follow these steps to set up the environment and run the project locally on your machine.
 
